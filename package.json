@@ -2,7 +2,7 @@
   "name": "house-tracker",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/bshah4397/house-tracker.git",
+  "homepage": "https://bshah4397.github.io/house-tracker/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
