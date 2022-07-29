@@ -95,6 +95,7 @@ function App() {
                 // date={(new Date()).toISOString()}
                 dates={data.filter((_) => _.present).map((_)=> _.date.split( "T" )[0])}
                 onSelect={(date) => {}}
+                daysOfWeek
               />
               <PageHeader
                 title="Temp. Roomie"
