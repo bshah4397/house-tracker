@@ -29,9 +29,22 @@ function App() {
   
     const res = await axios.request(attendance);
     const recievedData = res.data;
-    console.log(recievedData);
-    setData(recievedData);
-    console.log(recievedData.filter((_) => _.present).map((_)=> _.date));
+    const transformedData = [];
+
+    recievedData.forEach(_ => {
+      const date = new Date(_.date);
+      date.setDate(date.getDate()-1);
+      transformedData.push({
+        _id: _._id,
+        _position: _._position,
+        date: date.toISOString(),
+        present: _.present
+      })
+    });
+
+    transformedData && console.log(transformedData);
+    transformedData.length > 0 && setData(transformedData);
+    
   }
 
   useEffect(() => {
@@ -80,7 +93,7 @@ function App() {
               <Calendar
                 size="medium"
                 // date={(new Date()).toISOString()}
-                dates={data.filter((_) => _.present).map((_)=> _.date)}
+                dates={data.filter((_) => _.present).map((_)=> _.date.split( "T" )[0])}
                 onSelect={(date) => {}}
               />
               <PageHeader
