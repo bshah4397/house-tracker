@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.js": "/house-tracker/static/js/main.c892f543.js",
+    "main.js": "/house-tracker/static/js/main.555875e1.js",
     "static/js/787.a0cd9575.chunk.js": "/house-tracker/static/js/787.a0cd9575.chunk.js",
     "index.html": "/house-tracker/index.html",
-    "main.c892f543.js.map": "/house-tracker/static/js/main.c892f543.js.map",
+    "main.555875e1.js.map": "/house-tracker/static/js/main.555875e1.js.map",
     "787.a0cd9575.chunk.js.map": "/house-tracker/static/js/787.a0cd9575.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.c892f543.js"
+    "static/js/main.555875e1.js"
   ]
 }
