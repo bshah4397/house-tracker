@@ -93,7 +93,7 @@ function App() {
               <Calendar
                 size="medium"
                 // date={(new Date()).toISOString()}
-                dates={data.filter((_) => _.present).map((_)=> _.date.split( "T" )[0])}
+                dates={data.filter((_) => _.present).map((_)=> _.date.split( "T" )[0]).reverse()}
                 onSelect={(date) => {}}
                 daysOfWeek
               />
